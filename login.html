@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+
+  <body>
+    <div class="maindiv">
+      <div class="Sign">
+        <div
+          class="ss"
+          style="font-size: 30px; margin-bottom: 10px; margin-left: 96px"
+        >
+          <b>Login In</b>
+        </div>
+        <form onsubmit="validation(event)">
+          <div class="email" style="margin-top: 25px">
+            <label for="emaill" style="margin-left: 80px"
+              >Enter your Username</label
+            ><br />
+            <input
+              type="email"
+              id="emaill"
+              placeholder="E-mail"
+              maxlength="50"
+              style="margin-top: 20px; width: 300px"
+            />
+          </div>
+          <div class="password" style="margin-top: 20px">
+            <label for="password" style="margin-left: 80px"
+              >Enter your Password</label
+            ><br />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              style="margin-top: 20px; width: 300px"
+            />
+          </div>
+          <div class="forgot" style="margin-left: 100px">
+            <a>Forgot Password?</a><br />
+          </div>
+          <div class="btn">
+            <button
+              type="submit"
+              style="
+                margin-top: 20px;
+                width: 80px;
+                margin-left: 115px;
+                font-size: 10px;
+              "
+            >
+              LOG IN
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="sec">
+        <h1>Welcome!</h1>
+        <br /><br />
+        <p>Enter your personal details to<br />use all of site features</p>
+      </div>
+    </div>
+    <script>
+      function validation(event) {
+        event.preventDefault();
+
+        var a = document.getElementById("emaill").value;
+        var b = document.getElementById("password").value;
+        if (!a || !b) {
+          window.alert("Invalid username or password!\nPlease Try again");
+        } else {
+          document.location.href = "homepage.html";
+        }
+      }
+    </script>
+  </body>
+</html>

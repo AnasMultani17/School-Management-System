@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="form.css" />
+    <link rel="stylesheet" href="common.css" />
+    <script src="common.js"></script>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="cat">
+        <img src="ns.png" class="logo" onclick="loadHome()"/>
+      </div>
+      <div class="c1" onclick="loadAdmission()">Admission</div>
+      <div class="c3" onclick="loadUpdates()">Updates</div>
+      <div class="c4" onclick="loadAttendance()">Attendance</div>
+      <div class="c5" onclick="loadResult()">Results</div>
+    </div>
+    <div class="container">
+      <h2 align="center">Student Admission Form</h2>
+      <form id="admissionForm" onsubmit="return validateForm()">
+        <div class="input">
+          <img style="width: 791px; height: 422px" alt="" class="img1" src="admission.png" /><br />
+          <label for="firstName">First Name:</label>
+          <input id="firstName" name="firstName" required type="text" />
+        </div>
+        <div class="input">
+          <label for="lastName">Last Name:</label>
+          <input id="lastName" name="lastName" required type="text" />
+        </div>
+        <div class="input">
+          <label for="dob">Birth Date:</label>
+          <input id="dob" name="dob" required type="date" />
+        </div>
+        <div class="input">
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+        <div class="input">
+          <label for="phone">Phone Number:</label>
+          <input id="phone" name="phone" pattern="\d{10}" title="Phone number must be exactly 10 digits long" required type="tel" />
+        </div>
+        <div class="input">
+          <label for="address">Home Address:</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="input">
+          <label for="prevSchool">Previous School Name:</label>
+          <input id="prevSchool" name="prevSchool" type="text" />
+        </div>
+        <div class="input">
+          <label for="gradeLevel">Grade Level Entering:</label>
+          <input id="gradeLevel" name="gradeLevel" required type="text" />
+        </div>
+        <div class="input">
+          <label for="parentName">Parent/Guardian Name:</label>
+          <input id="parentName" name="parentName" required type="text" />
+        </div>
+        <div class="input">
+          <label for="relationship">Relationship to Student:</label>
+          <input id="relationship" name="relationship" required type="text" />
+        </div>
+        <div class="input">
+          <label for="parentEmail">Parent/Guardian Email:</label>
+          <input id="parentEmail" name="parentEmail" type="email" />
+        </div>
+        <div class="input">
+          <label for="parentPhone">Parent/Guardian Phone:</label>
+          <input id="parentPhone" name="parentPhone" pattern="\d{10}" title="Phone number must be exactly 10 digits long" required type="tel" />
+        </div>
+        <div class="input">
+          <label for="emergencyContact">Emergency Contact Name:</label>
+          <input id="emergencyContact" name="emergencyContact" required type="text" />
+        </div>
+        <div class="input">
+          <label for="emergencyRelationship">Relationship to Student:</label>
+          <input id="emergencyRelationship" name="emergencyRelationship" required type="text" />
+        </div>
+        <div class="input">
+          <label for="emergencyPhone">Emergency Contact Phone:</label>
+          <input id="emergencyPhone" name="emergencyPhone" pattern="\d{10}" title="Phone number must be exactly 10 digits long" required type="tel" />
+        </div>
+        <div class="input">
+          <label for="fileUpload">Upload Documents:</label>
+          <input id="fileUpload" name="fileUpload" type="file" />
+        </div>
+        <div class="input">
+          <label for="courses">Course Selection:</label>
+          <select id="courses" name="courses" required>
+            <option value="">Select Course</option>
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="english">English</option>
+          </select>
+        </div>
+        <div class="input">
+          <label for="signature">Signature:</label>
+          <input id="signature" name="signature" type="file" />
+        </div>
+        <div class="input">
+          <label for="photoUpload">Upload Photo:</label>
+          <input id="photoUpload" name="photoUpload" type="file" />
+        </div>
+        <div class="input">
+          <label for="consent">Consent:</label>
+          <input id="consent" name="consent" type="checkbox" required /> I agree to the school policies.
+        </div>
+        <input type="submit" class="btn" value="Submit" />
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        const form = document.getElementById('admissionForm');
+        const consent = document.getElementById('consent').checked;
+        
+        if (!consent) {
+          alert('You must agree to the school policies.');
+          return false;
+        }
+        
+        return true;
+      }
+    </script>
+  </body>
+</html>

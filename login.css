@@ -1,0 +1,69 @@
+body {
+  background-color: #c9d6ff;
+  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.maindiv {
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 770px;
+  max-width: 50%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  min-height: 480px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.Sign {
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Sign input {
+  background-color: #eee;
+  border: none;
+  margin: 8px 0px;
+  padding: 10px 15px;
+  font-size: 13px;
+  border-radius: 8px;
+  width: 50%;
+  outline: none;
+}
+button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 70px;
+  background-color: orange;
+  height: 30px;
+  text-transform: uppercase;
+}
+.forgot a {
+  color: black;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn :hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+.sec {
+  margin-top: 150px;
+  padding-left: 50px;
+}

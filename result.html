@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="result.css" />
+    <link rel="stylesheet" href="common.css" />
+    <script src="common.js"></script>
+    <script> 
+        $(document).ready(function(){
+          $(".btn1").click(function(){
+            $(".LPW-11").slideToggle("10000ms");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn2").click(function(){
+            $(".LPW-12").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn3").click(function(){
+            $(".LPW-13").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn4").click(function(){
+            $(".LPW-14").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn5").click(function(){
+            $(".LPW-15").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn6").click(function(){
+            $(".LPW-16").slideToggle("slow");
+          });
+        });
+        $(document).ready(function(){
+          $(".btn7").click(function(){
+            $(".LPW-17").slideToggle("slow");
+          });
+        });
+        </script>
+  </head>
+  <body>
+    <div class="main1">
+      <div class="cat">
+        <img src="ns.png" class="logo" onclick="loadHome()"/>
+      </div>
+      <div class="c1" onclick="loadAdmission()">Admission</div>
+      <div class="c3" onclick="loadUpdates()">Updates</div>
+      <div class="c4" onclick="loadAttendance()">Attendence</div>
+      <div class="c5" onclick="loadResult()">Results</div>
+    </div>
+     <div class="results">
+        <p style="text-align: center; font-size: 40px; "><b>Nirma School</b></p><br><hr>
+        <!-- <p style="text-align: center; font-size: 30px;"><b>Institute of Technology</b></p><br><hr> -->
+        <p style="text-align: center; font-size: 20px;"><b>Result Details</b></p><hr>
+        <table class="Hello" style="margin-left: 100px;">
+            <tr>
+                <th>Action</th>
+                <th>Semester</th>
+                <th>Course</th>
+                <th>Type</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+            </tr>
+            <tr>
+                <td><button class="btn1">Details</button></td>
+                <td>&#8545;</td>
+                <td>Maths</td>
+                <td>Class Test</td>
+                <td>40</td>
+                <td>35</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-11" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-11" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>40</td>
+                <td>35</td>
+                <td>Class Test</td>
+                <td>1/5/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn2">Details</button></td>
+                <td>&#8545;</td>
+                <td>Maths</td>
+                <td>Final Exam</td>
+                <td>100</td>
+                <td>73</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-12" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-12" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>30</td>
+                <td>25</td>
+                <td>Final Exam</td>
+                <td>15/05/2024</td>
+            </tr>
+            <tr class="LPW-12" style="display: none;">
+                <td></td>
+                <td>2</td>
+                <td>30</td>
+                <td>20</td>
+                <td>Final Exam</td>
+                <td>15/05/2024</td>
+            </tr>
+            <tr class="LPW-12" style="display: none;">
+                <td></td>
+                <td>3</td>
+                <td>30</td>
+                <td>25</td>
+                <td>Final Exam</td>
+                <td>15/05/2024</td>
+            </tr>
+            <tr class="LPW-12" style="display: none;">
+                <td></td>
+                <td>4</td>
+                <td>10</td>
+                <td>3</td>
+                <td>Final Exam</td>
+                <td>15/05/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn3">Details</button></td>
+                <td>&#8545;</td>
+                <td>Science</td>
+                <td>Class Test</td>
+                <td>40</td>
+                <td>32</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-13" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-13" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>40</td>
+                <td>32</td>
+                <td>Class Test</td>
+                <td>02/05/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn4">Details</button></td>
+                <td>&#8545;</td>
+                <td>Science</td>
+                <td>Final Exam</td>
+                <td>100</td>
+                <td>80</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-14" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-14" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>30</td>
+                <td>25</td>
+                <td>Final Exam</td>
+                <td>16/05/2024</td>
+            </tr>
+            <tr class="LPW-14" style="display: none;">
+                <td></td>
+                <td>2</td>
+                <td>30</td>
+                <td>20</td>
+                <td>Final Exam</td>
+                <td>16/05/2024</td>
+            </tr>
+            <tr class="LPW-14" style="display: none;">
+                <td></td>
+                <td>3</td>
+                <td>30</td>
+                <td>30</td>
+                <td>Final Exam</td>
+                <td>16/05/2024</td>
+            </tr>
+            <tr class="LPW-14" style="display: none;">
+                <td></td>
+                <td>4</td>
+                <td>10</td>
+                <td>5</td>
+                <td>Final Exam</td>
+                <td>16/05/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn5">Details</button></td>
+                <td>&#8545;</td>
+                <td>English</td>
+                <td>Class Test</td>
+                <td>40</td>
+                <td>33</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-15" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-15" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>40</td>
+                <td>33</td>
+                <td>Class Test</td>
+                <td>03/05/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn6">Details</button></td>
+                <td>&#8545;</td>
+                <td>English</td>
+                <td>Final Exam</td>
+                <td>100</td>
+                <td>95</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-16" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-16" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>30</td>
+                <td>30</td>
+                <td>Final Exam</td>
+                <td>20/05/2024</td>
+            </tr>
+            <tr class="LPW-16" style="display: none;">
+                <td></td>
+                <td>2</td>
+                <td>30</td>
+                <td>30</td>
+                <td>Final Exam</td>
+                <td>20/05/2024</td>
+            </tr>
+            <tr class="LPW-16" style="display: none;">
+                <td></td>
+                <td>3</td>
+                <td>30</td>
+                <td>30</td>
+                <td>Final Exam</td>
+                <td>20/05/2024</td>
+            </tr>
+            <tr class="LPW-16" style="display: none;">
+                <td></td>
+                <td>4</td>
+                <td>10</td>
+                <td>5</td>
+                <td>Final Exam</td>
+                <td>20/05/2024</td>
+            </tr>
+        </div>
+            <tr>
+                <td><button class="btn7">Details</button></td>
+                <td>&#8545;</td>
+                <td>Hindi</td>
+                <td>Final Exam</td>
+                <td>100</td>
+                <td>92</td>
+            </tr>
+            <div class="Slide">
+            <tr class="LPW-17" style="display: none;">
+                <th></th>
+                <th>Question ID</th>
+                <th>Total marks</th>
+                <th>Obtained marks</th>
+                <th>Type</th>
+                <th>Date</th>
+            </tr>
+            <tr class="LPW-17" style="display: none;">
+                <td></td>
+                <td>1</td>
+                <td>30</td>
+                <td>26</td>
+                <td>Final Exam</td>
+                <td>21/05/2024</td>
+            </tr>
+            <tr class="LPW-17" style="display: none;">
+                <td></td>
+                <td>2</td>
+                <td>30</td>
+                <td>26</td>
+                <td>Final Exam</td>
+                <td>21/05/2024</td>
+            </tr>
+            <tr class="LPW-17" style="display: none;">
+                <td></td>
+                <td>3</td>
+                <td>30</td>
+                <td>30</td>
+                <td>Final Exam</td>
+                <td>21/05/2024</td>
+            </tr>
+            <tr class="LPW-17" style="display: none;">
+                <td></td>
+                <td>4</td>
+                <td>10</td>
+                <td>10</td>
+                <td>Final Exam</td>
+                <td>21/05/2024</td>
+            </tr>
+        </div>
+            
+            
+            </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

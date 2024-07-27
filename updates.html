@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Updates</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="updates.css" />
+    <script src="common.js"></script>
+    <script>
+      var isVisible1 = false;
+      $(document).ready(function () {
+        $("#arr1").click(function () {
+          if (!isVisible1) {
+            $(".pro_1-2").show();
+            $("#arr1").css("transform", "rotate(180deg)");
+            isVisible1 = true;
+          } else {
+            $(".pro_1-2").hide();
+            $("#arr1").css("transform", "rotate(0deg)");
+            isVisible1 = false;
+          }
+        });
+        var isVisible2 = false;
+        $("#arr2").click(function () {
+          if (!isVisible2) {
+            $(".pro_2-2").show();
+            $("#arr2").css("transform", "rotate(180deg)");
+            isVisible2 = true;
+          } else {
+            $(".pro_2-2").hide();
+            $("#arr2").css("transform", "rotate(0deg)");
+            isVisible2 = false;
+          }
+        });
+        var isVisible3 = false;
+        $("#arr3").click(function () {
+          if (!isVisible3) {
+            $(".pro_3-2").show();
+            $("#arr3").css("transform", "rotate(180deg)");
+            isVisible3 = true;
+          } else {
+            $(".pro_3-2").hide();
+            $("#arr3").css("transform", "rotate(0deg)");
+            isVisible3 = false;
+          }
+        });
+        var isVisible4 = false;
+        $("#arr4").click(function () {
+          if (!isVisible4) {
+            $(".pro_4-2").show();
+            $("#arr4").css("transform", "rotate(180deg)");
+            isVisible4 = true;
+          } else {
+            $(".pro_4-2").hide();
+            $("#arr4").css("transform", "rotate(0deg)");
+            isVisible4 = false;
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="main1">
+      <div class="cat">
+       <img src="ns.png" class="logo" onclick="loadHome()"/>
+      </div>
+      <div class="c1" onclick="loadAdmission()">Admission</div>
+      <div class="c3" onclick="loadUpdates()">Updates</div>
+      <div class="c4" onclick="loadAttendance()">Attendance</div>
+      <div class="c5" onclick="loadResult()">Results</div>
+    </div>
+    <div class="table-container">
+      <table align="center" class="table-left">
+        <tr>
+          <td>
+            <div class="pro_1">
+              <h1 align="left" class="up1">Parents teachers meeting</h1>
+              <img src="d-arrow.png" class="darrow arrow-down" id="arr1" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pro_1-2">
+              <p>
+                Nirma School is pleased to invite all parents to our upcoming
+                Parents-Teacher Meeting (PTM) on April 28, 2024, at 10:00 AM.
+                This meeting provides a valuable opportunity for you to discuss
+                your child's academic progress, behavior, and overall school
+                experience.<br /><b> Meeting Highlights:</b><br />
+
+                Discuss your child's achievements and areas for improvement with
+                their teachers.<br />
+                Share insights and ask questions regarding your child's academic
+                journey.<br />
+                Address any concerns you may have to help enhance your child's
+                educational experience.<br /><b> Why Attend?</b><br />
+                Your active participation is crucial in supporting your child's
+                education and growth. By working together, we can help your
+                child achieve their full potential.<br /><b>
+                  How to Confirm Your Attendance:</b
+                ><br />
+                Please confirm your attendance by April 26, 2024. Contact the
+                school office at (555) 123-4567 or email us at
+                admin@nirmaschool.edu to RSVP. We look forward to your
+                participation and collaborating with you to create a supportive
+                and enriching learning environment for your child. Thank you for
+                being an essential part of the Nirma School community. Warm
+                regards,<br />
+                Mr. Smith<br />
+                Principal<br />
+                Nirma School
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table align="center" class="table-right">
+        <tr>
+          <td>
+            <div class="pro_2">
+              <h1 align="left" class="up1">
+                Declaration of results of academic year 2023
+              </h1>
+              <img src="d-arrow.png" class="darrow arrow-down" id="arr2" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pro_2-2">
+              <p>
+                <b>Nirma School</b> is pleased to announce the declaration of
+                academic results for the year <b>2023-2024</b>.
+
+                <b>Date:</b> April 30, 2024<br />
+                <b>Time:</b> Results will be available online starting at
+                <b>9:00 AM</b>.<br />
+
+                <b>How to Access Results:</b><br />
+
+                <b>Online:</b> Visit our official website and use your child’s
+                student ID to access the results. <b>In-Person:</b> Collect the
+                results from your child’s classroom.<br />
+                <b>Important Information:</b><br />
+
+                Review the results carefully and discuss them with your child.
+                Contact your child's teacher for any questions or
+                clarifications. Schedule a meeting with teachers if you wish to
+                discuss your child’s progress in detail. Your involvement is
+                crucial to your child's academic success. Thank you for your
+                continued support and for being a part of the
+                <b>Nirma School</b> community. Warm regards,<br />
+                <b>Mr. Smith</b><br />
+                <b>Principal</b><br />
+                <b>Nirma School</b>
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table align="center" class="table-left">
+        <tr>
+          <td>
+            <div class="pro_3">
+              <h1 align="left" class="up1">
+                Invitation for Annual sports day event
+              </h1>
+              <img src="d-arrow.png" class="darrow arrow-down" id="arr3" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pro_3-2">
+              <p>
+                Nirma School is excited to announce our upcoming Annual Sports
+                Day event, celebrating our students' physical talents and
+                teamwork. <br />Date: May 12, 2024<br />
+                Time: Events will commence at 9:00 AM.<br /><b>Highlights:</b>
+                <br />
+                Watch our students compete in various athletic events. Enjoy
+                performances and activities showcasing our students' skills.
+                Support your child's participation and cheer on their
+                efforts.<br /><b>Important Information:</b><br />
+                Ensure your child is dressed appropriately for the day.
+                Encourage your child to participate and enjoy the event.
+                Refreshments will be provided for attendees. Your presence will
+                make this day even more special for our students. We look
+                forward to seeing you there! Warm regards,<br /><b>
+                  Mr. Smith<br />
+                  Principal<br />
+                  Nirma School</b
+                >
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table align="center" class="table-right">
+        <tr>
+          <td>
+            <div class="pro_4">
+              <h1 align="left" class="up1">
+                Invitation for Art Exhibition organized in Nirma School
+              </h1>
+              <img src="d-arrow.png" class="darrow arrow-down" id="arr4" />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="pro_4-2">
+              <p>
+                Nirma School is pleased to invite you to our annual Art
+                Exhibition, showcasing our students' creativity and artistic
+                talent.<br />
+                <b>Date: </b>May 20, 2024<br />
+                <b>Time: </b>The exhibition will open at 10:00 AM.<br />
+                <b>Highlights:</b><br />
+                View a variety of art pieces created by our talented students.
+                Engage with students and learn about their artistic process.
+                Appreciate the diverse range of mediums and styles on
+                display.<br />
+                <b>Important Information:</b> <br />The exhibition will be held
+                in the school auditorium. Artwork will be available for viewing
+                throughout the day. Your attendance and support will greatly
+                encourage our young artists. We hope you will join us to
+                celebrate and support our students' artistic achievements. Warm
+                regards,<br />
+                <b
+                  >Mr. Smith<br />
+                  Principal<br />
+                  Nirma School</b
+                >
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

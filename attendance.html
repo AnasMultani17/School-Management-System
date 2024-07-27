@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="attendance.css" />
+    <link rel="stylesheet" href="common.css" />
+    <script src="common.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".btn-details1").click(function () {
+          $(".ad1").toggle();
+        });
+      });
+      $(document).ready(function () {
+        $(".btn-details2").click(function () {
+          $(".ad2").toggle();
+        });
+      });
+      $(document).ready(function () {
+        $(".btn-details3").click(function () {
+          $(".ad3").toggle();
+        });
+      });
+      $(document).ready(function () {
+        $(".btn-details4").click(function () {
+          $(".ad4").toggle();
+        });
+      });
+    </script>
+    <script>
+  function validation() {
+   
+    var rollNo = document.getElementById("rno").value;
+    var className = document.getElementById("class").value;
+
+    
+    if (!rollNo || !className) {
+      window.alert("Enter roll number and class");
+      
+    }
+    else{
+     $(document).ready(function () {
+       
+          $(".main").show();
+        });
+  
+    }
+  }
+</script>
+  <body>
+    <div class="main1">
+      <div class="cat">
+        <img src="ns.png" class="logo" onclick="loadHome()"/>
+      </div>
+      <div class="c1" onclick="loadAdmission()">Admission</div>
+
+      <div class="c3" onclick="loadUpdates()">Updates</div>
+      <div class="c4" onclick="loadAttendance()">Attendence</div>
+      <div class="c5" onclick="loadResult()">Results</div>
+    </div>
+    <div>
+      <form>
+      Roll No: <input type="text" id="rno" class="input" /> Class:
+      <input type="text" id="class" class="input" />
+      <input
+        type="button"
+        class="btn"
+        value="Show Attendance"
+        onclick="validation()"
+      />
+      </form>
+    </div>
+    <div class="main">
+      <table class="Hello" style="margin-left: 100px">
+        <tr>
+          <th>Action</th>
+          <th>Class</th>
+          <th>Present</th>
+          <th>Absent</th>
+          <th>Total Classes</th>
+          <th>Attendance Percentage</th>
+        </tr>
+        <tr>
+          <td><button class="btn-details1">Details</button></td>
+          <td>Maths</td>
+          <td>8</td>
+          <td>2</td>
+          <td>10</td>
+          <td>80%</td>
+        </tr>
+
+        <tr class="attendance-details">
+          <td colspan="6">
+            <div class="ad1">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Attendance</th>
+                </tr>
+                <tr>
+                  <td>01/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>02/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>03/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>04/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>05/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>06/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>07/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>08/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>09/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>10/04/2024</td>
+                  <td>Present</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="btn-details2">Details</button></td>
+          <td>Science</td>
+          <td>6</td>
+          <td>4</td>
+          <td>10</td>
+          <td>60%</td>
+        </tr>
+
+        <tr class="attendance-details">
+          <td colspan="6">
+            <div class="ad2">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Attendance</th>
+                </tr>
+                <tr>
+                  <td>01/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>02/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>03/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>04/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>05/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>06/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>07/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>08/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>09/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>10/04/2024</td>
+                  <td>Present</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="btn-details3">Details</button></td>
+          <td>English</td>
+          <td>9</td>
+          <td>1</td>
+          <td>10</td>
+          <td>90%</td>
+        </tr>
+
+        <tr class="attendance-details">
+          <td colspan="6">
+            <div class="ad3">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Attendance</th>
+                </tr>
+                <tr>
+                  <td>01/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>02/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>03/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>04/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>05/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>06/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>07/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>08/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>09/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>10/04/2024</td>
+                  <td>Present</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="btn-details4">Details</button></td>
+          <td>Humanities</td>
+          <td>5</td>
+          <td>5</td>
+          <td>10</td>
+          <td>50%</td>
+        </tr>
+
+        <tr class="attendance-details">
+          <td colspan="6">
+            <div class="ad4">
+              <table>
+                <tr>
+                  <th>Date</th>
+                  <th>Attendance</th>
+                </tr>
+                <tr>
+                  <th>Date</th>
+                  <th>Attendance</th>
+                </tr>
+                <tr>
+                  <td>01/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>02/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>03/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>04/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>05/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>06/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>07/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>08/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+                <tr>
+                  <td>09/04/2024</td>
+                  <td>Present</td>
+                </tr>
+                <tr>
+                  <td>10/04/2024</td>
+                  <td>Absent</td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

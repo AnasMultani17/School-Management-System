@@ -1,0 +1,46 @@
+.pro_1,
+.pro_2,
+.pro_3,
+.pro_4 {
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 15px;
+  height: 30px;
+  margin-bottom: 0px;
+  width: 800px;
+}
+
+.pro_1-2,
+.pro_2-2,
+.pro_3-2,
+.pro_4-2 {
+  border: 2px solid #ddd;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  padding: 20px;
+  height: auto;
+  width: 575px;
+  display: none;
+  margin: auto;
+}
+
+.darrow {
+  margin-left: auto;
+  width: 50px;
+}
+
+.up1 {
+  font-size: 20px;
+}
+
+.t1 {
+  padding: 0%;
+}

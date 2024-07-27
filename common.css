@@ -1,0 +1,47 @@
+.main1 {
+  padding: 0;
+  background-color: cadetblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color: Black;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  width: 50px;
+}
+.c1,
+.c2,
+.c3,
+.c4,
+.c5 {
+  color: Black;
+  font-size: 18px;
+  text-align: center;
+  padding: 0 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  width: 15%;
+  padding: 0%;
+}
+
+.c1:hover,
+.c2:hover,
+.c3:hover,
+.c4:hover,
+.c5:hover {
+  color: white;
+}
+
+.cat {
+  color: #007bff;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
