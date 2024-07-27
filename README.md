@@ -79,6 +79,10 @@ This project is a simple web application designed to facilitate school managemen
 - `attendance.html`: The attendance page.
 - `styles/`: Directory for CSS files.
 - `scripts/`: Directory for JavaScript files.
+- ## Contributors
+
+- **Anas Multani**
+- **Karmit Langhnoda**
 
 ## Contributing
 
@@ -88,6 +92,8 @@ If you'd like to contribute to this project, please fork the repository and subm
 
 Thanks to the open-source community for providing valuable tools and resources that made this project possible.
 
----
+## License
 
-Feel free to adjust any specifics or add additional information as needed!
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
