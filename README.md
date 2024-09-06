@@ -77,8 +77,8 @@ This project is a simple web application designed to facilitate school managemen
 - `updates.html`: The updates page.
 - `result.html`: The result page.
 - `attendance.html`: The attendance page.
-- `styles/`: Directory for CSS files.
-- `scripts/`: Directory for JavaScript files.
+- `styles`: Directory for CSS files.
+- `scripts`: Directory for JavaScript files.
 - ## Contributors
 
 - **Anas Multani**
