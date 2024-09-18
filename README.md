@@ -1,7 +1,3 @@
-Certainly! Here's a revised `README.md` file for your GitHub repository, with personal details removed and formatted to provide a clear overview of your project.
-
----
-
 # School Management System
 
 ## Overview
